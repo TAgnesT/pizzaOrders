@@ -6,7 +6,7 @@ const orders = [
         exta: "ananas",
         drink: "fanta",
         price: 10,
-        kep: "https://www.pexels.com/photo/pizza-dish-367915/"
+        kep: "https://www.simplehomecookedrecipes.com/wp-content/uploads/2021/02/Hawaiian-Pizza-800x530.png"
     },
     {
         id: 2,
@@ -14,39 +14,39 @@ const orders = [
         exta: "hot-salami",
         drink: "coca-cola",
         price: 9,
-        kep: "https://www.pexels.com/photo/photo-of-person-holding-sliced-pizza-3915857/"
+        kep: "https://cdn.agrodolce.it/RWEFdFdF07lA6kJeVzMAu9ldF6w=/1150x647/smart/https://www.agrodolce.it/app/uploads/2014/03/shutterstock_130123424.jpg"
     },
     {
         id: 3,
         pizza: "Ortolana",
-        exta: "ananas",
+        exta: "burrata",
         drink: "fanta",
         price: 12,
-        kep: "https://www.pexels.com/photo/close-up-photo-of-pizza-2619970/"
+        kep: "https://shop.eismann.it/upload/it/17574-pizza-suprema-ortolana-con-burrata-K-20211022.jpg"
     },
     {
         id: 4,
         pizza: "Broccoli",
-        exta: "panna",
+        exta: "acciughe",
         drink: "sprite",
         price: 10,
-        kep: "https://www.pexels.com/photo/baked-pizza-on-pizza-peel-in-oven-905847/"
+        kep: "https://media-assets.lacucinaitaliana.it/photos/620fc0f85d026d4777146e0c/1:1/w_1920,c_limit/Pizza-broccoli-e-acciughe.jpg"
     },
     {
         id: 5,
-        pizza: "Green",
-        exta: "paprika",
+        pizza: "Paprika",
+        exta: "chili",
         drink: "coca-cola",
         price: 8,
-        kep: "https://www.pexels.com/photo/a-colorful-sliced-pizza-2909822/"
+        kep: "https://blog.cookaround.com/vittoria70/wp-content/uploads/2016/05/DSCF5366.jpg"
     },
     {
         id: 6,
-        pizza: "Muschroom",
-        exta: "funghi",
+        pizza: "Funghi",
+        exta: "funghiporcini",
         drink: "fanta",
-        price: 13,
-        kep: "https://www.pexels.com/photo/appetizing-pizza-with-shrimps-and-champignon-on-wooden-table-4553111/"
+        price: 15,
+        kep: "https://www.cucina-naturale.it/wp-content/uploads/2017/09/funghi-zola.jpg"
     }
 ]
 
@@ -62,12 +62,14 @@ const orders = [
             console.log(orderek);
         
         output += `
-        <h3>Id:${orderek.id}</h3>
-        <h1>Pizza:${orderek.pizza}</h1>
-        <p>Extra:${orderek.exta}</p>
-        <p>Drink:${orderek.drink}</p>
-        <p>Price:${orderek.price}</p>
-        <img src="${orderek.kep}" alt="" id="pics">
+        <div class="rendel">
+            <h3>Id:${orderek.id}</h3>
+            <h1>Pizza:${orderek.pizza}</h1>
+            <p>Extra:${orderek.exta}</p>
+            <p>Drink:${orderek.drink}</p>
+            <p>Price:${orderek.price}</p>
+            <img src="${orderek.kep}" alt="" id="pics">
+        </div>
     `;
 
     document.querySelector(".order").innerHTML = output;
