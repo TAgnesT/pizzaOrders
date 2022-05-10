@@ -50,28 +50,33 @@ const orders = [
     }
 ]
 
-addEventListener("load", ()=>{
+//addEventListener("load", ()=>{
 
     orders.map((order)=>{
 
         console.log(order);
 
-
         let output = "";
+
+        orders.forEach((orderek)=>{
+            console.log(orderek);
         
         output += `
-        <h3>Id:${order.id}</h3>
-        <h1>Pizza:${order.pizza}</h1>
-        <p>Extra:${order.exta}</p>
-        <p>Drink:${order.drink}</p>
-        <p>Price:${order.price}</p>
-        <img src="${order.kep}" alt="" id="pics">
+        <h3>Id:${orderek.id}</h3>
+        <h1>Pizza:${orderek.pizza}</h1>
+        <p>Extra:${orderek.exta}</p>
+        <p>Drink:${orderek.drink}</p>
+        <p>Price:${orderek.price}</p>
+        <img src="${orderek.kep}" alt="" id="pics">
     `;
 
     document.querySelector(".order").innerHTML = output;
+
+        })
+
     })
     
-})
+//})
 
 
 
