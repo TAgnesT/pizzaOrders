@@ -1,9 +1,18 @@
 body{
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Radio Canada', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    text-shadow: 2px 1px 2px rgba(130,0,0,0.38);
 }
 
 .order{
@@ -17,19 +26,36 @@ body{
 
 .rendel{
 
-    background: rgb(202, 60, 60);
-    color: rgb(23, 2, 2);
-    padding: 5px;
+    background: url("https://i.pinimg.com/originals/8a/ee/04/8aee04abf8ebce4d67dd5699ad6917c4.jpg") center;
+    background-size: cover;
+    color: rgb(233, 224, 224);
+    padding: 8px;
     margin: 10px;
     border: 1px solid rgb(159, 28, 28);
     border-radius: 5px;
     box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+    text-shadow: 2px 1px 2px rgba(130,0,0,0.38);
 }
 
 #pics{
 
     height: 13rem;
     width: 16rem;
+}
+
+.rendel h4{
+
+    margin: 10px 0px;
+}
+
+.rendel h2{
+
+    font-size: 28px;
+}
+
+.rendel p{
+
+    font-size: 16px;
 }
